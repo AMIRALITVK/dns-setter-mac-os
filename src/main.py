@@ -59,7 +59,7 @@ def update_checkbox_color():
 # Function to toggle DNS
 def toggle_dns():
     interface = get_active_interface()
-    selected_dns = dns_listbox.get(tk.ACTIVE).split(' - ')[0]  # Get DNS IP only
+    selected_dns = dns_listbox.get(tk.ACTIVE).split(' - ')[0]
     is_on = dns_toggle_var.get()
 
     if not interface:
